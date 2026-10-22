@@ -4,9 +4,9 @@ A premium, responsive fitness coaching portfolio demonstration, imagined for Cal
 
 **Fictional brand. Illustrative programs, prices and scenarios. No real coaching services, payments, appointments or enquiries.**
 
-- [Production target](https://elevate-performance-coaching-one.vercel.app)
+- [Live demo](https://elevate-performance-coaching-one.vercel.app)
 - [GitHub repository](https://github.com/awaljanhematyar/elevate-performance-coaching)
-- [Portfolio target](https://hematyar-professional-portfolio.vercel.app/projects/elevate-performance-coaching)
+- [Published portfolio case study](https://hematyar-professional-portfolio.vercel.app/projects/elevate-performance-coaching)
 
 See [delivery verification](docs/QA.md) for actual publication and test results. A target URL alone is not proof of deployment.
 
