@@ -65,3 +65,7 @@ Read PRD, architecture, rules, phases and design before continuing. Do not assum
 - Final lint passed after adding QA helpers. Six screenshots, PNG/WebP cover, browser walkthrough, licensing record, setup/customization/deployment README and complete QA report delivered.
 - No unresolved external publication blockers. Product remains a fictional demo with no real enquiries; unknown client routes can return HTTP 200; indexing disabled; no screen-reader/physical-device/Safari/Firefox or Lighthouse/field metrics claimed. Local Windows worker startup remains a documented limitation, while all 20 automated tests pass in GitHub Actions.
 - Final documentation/helper follow-up is committed after this log. Its resulting hash and final synchronization are independently checked after commit rather than inserted into its own content.
+
+## Static desktop hero update — 2026-11-24
+- User requested four hero photographs on desktop/laptop only, without animation or a slider. Added a fixed 2×2 photo composition at widths >=1024px using existing local assets. Smaller layouts retain the original hero; media-qualified picture sources avoid loading the additional desktop sources on mobile.
+- Production build passed. Browser checks at 375/768/1024/1440 verified four visible gallery images only at desktop widths, no animation/transitions on the images, and no horizontal overflow. Desktop screenshot visually reviewed under ignored tmp/hero-four-desktop.png.

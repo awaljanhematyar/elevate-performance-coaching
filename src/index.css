@@ -37,3 +37,19 @@
 /* Reflow long headings and controls when users enlarge browser text. */
 h1,h2,h3{overflow-wrap:anywhere}.button{max-width:100%}.button>svg{flex-shrink:0}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+
+/* ========================================
+   STATIC DESKTOP HERO PHOTO COMPOSITION
+   Four still photographs; the mobile hero keeps its original presentation.
+   ======================================== */
+.hero-desktop-gallery{display:none}
+@media(min-width:1024px){
+  .hero>.hero-photo{display:none}
+  .hero-desktop-gallery{display:grid;grid-template-columns:1.15fr 1fr;grid-template-rows:1fr 1fr;gap:8px;position:absolute;inset:0 0 0 34%;z-index:-3;background:var(--ink)}
+  .hero-desktop-gallery picture{display:block;min-width:0;min-height:0;overflow:hidden}
+  .hero-desktop-gallery img{width:100%;height:100%;object-fit:cover;animation:none;transition:none;transform:none}
+  .hero-desktop-gallery picture:first-child img{object-position:65% center}
+  .hero-desktop-gallery picture:nth-child(2) img{object-position:35% center}
+  .hero-desktop-gallery picture:nth-child(3) img{object-position:center}
+  .hero>.hero-shade{background:linear-gradient(90deg,#0a1119 0%,rgba(10,17,25,.97) 28%,rgba(10,17,25,.83) 43%,rgba(10,17,25,.12) 74%),linear-gradient(0deg,rgba(10,17,25,.7),transparent 35%)}
+}
